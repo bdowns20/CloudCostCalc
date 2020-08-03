@@ -1,0 +1,50 @@
+--- Initial state ---
+current usage - expected: 0, actual: 0
+current charges - expected: 0.0, actual: 0.0
+total charges - expected: 0.0, actual: 0.0
+
+--- After u(50, 24) ---
+current usage - expected: 1200, actual: 1200
+current charges - expected: 12.0, actual: 12.0
+current effective rate - expected: 1.0, actual: 1.0
+total charges - expected: 12.0, actual: 12.0
+
+--- After u(50, 96) ---
+current usage - expected: 6000, actual: 6000
+current charges - expected: 60.0, actual: 60.0
+current effective rate - expected: 1.0, actual: 1.0
+total charges - expected: 60.0, actual: 60.0
+
+--- After u(120, 24) ---
+current usage - expected: 8880, actual: 8880
+current charges - expected: 108.0, actual: 108.0
+current effective rate - expected: 1.216, actual: 1.216
+total charges - expected: 108.0, actual: 108.0
+
+--- After u(20, 24) ---
+current usage - expected: 9360, actual: 9360
+current charges - expected: 112.8, actual: 112.8
+current effective rate - expected: 1.205, actual: 1.205
+total charges - expected: 112.8, actual: 112.8
+
+--- After q(20, 100) then u(200, 72) ---
+current usage - expected: 23760, actual: 23760
+current charges - expected: 276.8, actual: 276.8
+current effective rate - expected: 1.164, actual: 1.164
+total charges - expected: 276.8, actual: 276.8
+total effective rate - expected: 1.164, actual: 1.164
+
+--- After reset ---
+current usage - expected: 0, actual: 0
+current charges - expected: 0.0, actual: 0.0
+total charges - expected: 276.8, actual: 276.8
+total effective rate - expected: 1.164, actual: 1.164
+
+--- After u(150, 72) ---
+current usage - expected: 10800, actual: 10800
+current charges - expected: 252.0, actual: 252.0
+current effective rate - expected: 2.333, actual: 2.333
+total charges - expected: 528.8, actual: 528.8
+total effective rate - expected: 1.53, actual: 1.53
+
+--- END OF PROVIDED TESTS ---
